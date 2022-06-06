@@ -1,0 +1,684 @@
+fileFormatVersion: 2
+guid: 79594854b38795d46a8e30a90f348537
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5115348375433396227
+    second: yuanshen_element_0
+  - first:
+      213: 424148484560747533
+    second: yuanshen_element_1
+  - first:
+      213: 24753168590996333
+    second: yuanshen_element_2
+  - first:
+      213: 3528449894772066583
+    second: yuanshen_element_3
+  - first:
+      213: -6762380130955439538
+    second: yuanshen_element_4
+  - first:
+      213: 6105240301648953477
+    second: yuanshen_element_5
+  - first:
+      213: -4512295264358074608
+    second: yuanshen_element_6
+  - first:
+      213: 6380493053108462353
+    second: yuanshen_element_7
+  - first:
+      213: -3496250851449890041
+    second: yuanshen_element_8
+  - first:
+      213: -5907713737661858143
+    second: yuanshen_element_9
+  - first:
+      213: 5779980768779004832
+    second: yuanshen_element_10
+  - first:
+      213: -3455521921094852024
+    second: yuanshen_element_11
+  - first:
+      213: -8592621026522130734
+    second: yuanshen_element_12
+  - first:
+      213: -3436398270142838799
+    second: yuanshen_element_13
+  - first:
+      213: 8442581002439806571
+    second: yuanshen_element_14
+  - first:
+      213: 7680468217446732687
+    second: yuanshen_element_15
+  - first:
+      213: 3207663062711338906
+    second: yuanshen_element_16
+  - first:
+      213: 4677030678513450846
+    second: yuanshen_element_17
+  - first:
+      213: -8310033947114179108
+    second: yuanshen_element_18
+  - first:
+      213: -8670463701411522210
+    second: yuanshen_element_19
+  - first:
+      213: 452641913605310309
+    second: yuanshen_element_20
+  - first:
+      213: -2428352009701987646
+    second: yuanshen_element_21
+  - first:
+      213: 5506763511301461197
+    second: yuanshen_element_22
+  - first:
+      213: -2315954337428911743
+    second: yuanshen_element_23
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: yuanshen_element_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 251
+        width: 89
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3004414ce3e5df640800000000000000
+      internalID: 5115348375433396227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuanshen_element_1
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 294
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0c734aacc0e2e500800000000000000
+      internalID: 424148484560747533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuanshen_element_2
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 254
+        width: 96
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d638eec20e0f75000800000000000000
+      internalID: 24753168590996333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuanshen_element_3
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 251
+        width: 109
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71947a91c7297f030800000000000000
+      internalID: 3528449894772066583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuanshen_element_4
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 250
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e42dd3a79133722a0800000000000000
+      internalID: -6762380130955439538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuanshen_element_5
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 254
+        width: 106
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5804f2815bb2ab450800000000000000
+      internalID: 6105240301648953477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuanshen_element_6
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 251
+        width: 95
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 017724e3d5b1161c0800000000000000
+      internalID: -4512295264358074608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuanshen_element_7
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 245
+        width: 107
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 113a06260a01c8850800000000000000
+      internalID: 6380493053108462353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuanshen_element_8
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 130
+        width: 89
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70b1ca1ef52da7fc0800000000000000
+      internalID: -3496250851449890041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuanshen_element_9
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 173
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ae38ffe7a5930ea0800000000000000
+      internalID: -5907713737661858143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuanshen_element_10
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 133
+        width: 96
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ab69a3b2ed963050800000000000000
+      internalID: 5779980768779004832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuanshen_element_11
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 130
+        width: 109
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 842e093fe158b00d0800000000000000
+      internalID: -3455521921094852024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuanshen_element_12
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 129
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d69898b3b0e0c880800000000000000
+      internalID: -8592621026522130734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuanshen_element_13
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 133
+        width: 106
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f78e59eaf57f40d0800000000000000
+      internalID: -3436398270142838799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuanshen_element_14
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 130
+        width: 95
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6ec2e5e0b21a2570800000000000000
+      internalID: 8442581002439806571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuanshen_element_15
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 124
+        width: 107
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f831791a621869a60800000000000000
+      internalID: 7680468217446732687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuanshen_element_16
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 9
+        width: 89
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a970d048f88e38c20800000000000000
+      internalID: 3207663062711338906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuanshen_element_17
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 52
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5ff5644f9628e040800000000000000
+      internalID: 4677030678513450846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuanshen_element_18
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 12
+        width: 96
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd572de4724dcac80800000000000000
+      internalID: -8310033947114179108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuanshen_element_19
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 9
+        width: 109
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e59927f93335ca780800000000000000
+      internalID: -8670463701411522210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuanshen_element_20
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 8
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 567c5e61c6b184600800000000000000
+      internalID: 452641913605310309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuanshen_element_21
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 12
+        width: 106
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ca6b1096b2cc4ed0800000000000000
+      internalID: -2428352009701987646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuanshen_element_22
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 9
+        width: 95
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc4d439cc34fb6c40800000000000000
+      internalID: 5506763511301461197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuanshen_element_23
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 3
+        width: 107
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1894681fcc31cdfd0800000000000000
+      internalID: -2315954337428911743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
