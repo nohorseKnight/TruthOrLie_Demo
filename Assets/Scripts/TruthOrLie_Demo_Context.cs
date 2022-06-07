@@ -7,6 +7,7 @@ namespace TruthOrLie_Demo
         protected override void Init()
         {
             RegisterSystem(new UISystem());
+            RegisterModel(new GameRuntimeModel());
         }
     }
 }

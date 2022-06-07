@@ -36,13 +36,17 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\TruthOrLie_Demo_Context.cs" />
      <Compile Include="Assets\Scripts\Controllers\BaseController.cs" />
      <Compile Include="Assets\Scripts\Controllers\Player.cs" />
      <Compile Include="Assets\Scripts\Systems\UISystem.cs" />
-     <Compile Include="Assets\Scripts\QFramework.cs" />
-     <Compile Include="Assets\Scripts\TruthOrLie_Demo_Context.cs" />
-     <Compile Include="Assets\Scripts\Controllers\InfoPanel.cs" />
      <Compile Include="Assets\Scripts\Commands\ChangePlayerATKElementCommand.cs" />
+     <Compile Include="Assets\Scripts\Controllers\InfoPanel.cs" />
+     <Compile Include="Assets\Scripts\QFramework.cs" />
+     <Compile Include="Assets\Scripts\Commands\ChangePlayerDEFElementCommand.cs" />
+     <Compile Include="Assets\Scripts\Controllers\Node.cs" />
+     <Compile Include="Assets\Scripts\Models\GameRuntimeModel.cs" />
+     <Compile Include="Assets\Scripts\Commands\ReachNodeCommand.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
@@ -670,6 +674,9 @@
     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
         <HintPath>D:\UnityProject\TruthOrLie_Demo\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+        <HintPath>D:\UnityProject\TruthOrLie_Demo\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualScripting.Flow">
         <HintPath>D:\UnityProject\TruthOrLie_Demo\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
     </Reference>
@@ -687,9 +694,6 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.Core">
         <HintPath>D:\UnityProject\TruthOrLie_Demo\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Sprite.Editor">
-        <HintPath>D:\UnityProject\TruthOrLie_Demo\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
