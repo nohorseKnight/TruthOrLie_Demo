@@ -24,8 +24,18 @@ namespace TruthOrLie_Demo
         }
         Transform _shieldTrans;
         [SerializeField] Element _shieldElement;
+        public Element ShieldElement
+        {
+            get { return _shieldElement; }
+            set { _shieldElement = value; }
+        }
         Transform _swordTrans;
         [SerializeField] Element _swordElement;
+        public Element SwordElement
+        {
+            get { return _swordElement; }
+            set { _swordElement = value; }
+        }
         public Button UpBtn;
         public Button DownBtn;
         public Button LeftBtn;
@@ -111,7 +121,7 @@ namespace TruthOrLie_Demo
 
         }
 
-        void PlayerInit()
+        public void PlayerInit()
         {
             GameRuntimeModel gameRuntimeModel = this.GetModel<GameRuntimeModel>();
 

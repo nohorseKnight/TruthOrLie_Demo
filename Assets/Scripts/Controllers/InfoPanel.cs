@@ -27,6 +27,7 @@ namespace TruthOrLie_Demo
 
             this.RegisterEvent<UpdateHPEvent>(updateEvent =>
             {
+                updateEvent.HP = updateEvent.HP > 100f ? 100f : updateEvent.HP;
                 _HpImage.fillAmount = updateEvent.HP / 100f;
                 _HpTextMesh.text = $"{updateEvent.HP.ToString("0.")}/100";
             }).UnRegisterWhenGameObjectDestroyed(gameObject);

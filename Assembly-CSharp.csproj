@@ -36,17 +36,21 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Commands\ReachNodeCommand.cs" />
      <Compile Include="Assets\Scripts\TruthOrLie_Demo_Context.cs" />
      <Compile Include="Assets\Scripts\Controllers\BaseController.cs" />
+     <Compile Include="Assets\Scripts\Controllers\Node.cs" />
      <Compile Include="Assets\Scripts\Controllers\Player.cs" />
+     <Compile Include="Assets\Scripts\Models\GameRuntimeModel.cs" />
      <Compile Include="Assets\Scripts\Systems\UISystem.cs" />
      <Compile Include="Assets\Scripts\Commands\ChangePlayerATKElementCommand.cs" />
      <Compile Include="Assets\Scripts\Controllers\InfoPanel.cs" />
      <Compile Include="Assets\Scripts\QFramework.cs" />
      <Compile Include="Assets\Scripts\Commands\ChangePlayerDEFElementCommand.cs" />
-     <Compile Include="Assets\Scripts\Controllers\Node.cs" />
-     <Compile Include="Assets\Scripts\Models\GameRuntimeModel.cs" />
-     <Compile Include="Assets\Scripts\Commands\ReachNodeCommand.cs" />
+     <Compile Include="Assets\Scripts\Controllers\MapInfoPanel.cs" />
+     <Compile Include="Assets\Scripts\Controllers\MenuPanel.cs" />
+     <Compile Include="Assets\Scripts\Commands\InitGameCommand.cs" />
+     <Compile Include="Assets\Scripts\Controllers\PopupPanel.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
