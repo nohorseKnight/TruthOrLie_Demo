@@ -55,9 +55,6 @@ namespace TruthOrLie_Demo
             _shieldTrans = transform.Find("Shield");
             _swordTrans = transform.Find("Sword");
 
-            PlayerInit();
-
-
             UpBtn.onClick.AddListener(() =>
             {
                 if (_mapY + 1 >= gameRuntimeModel.Map.GetLength(1)) return;
@@ -99,10 +96,10 @@ namespace TruthOrLie_Demo
                 _shieldElement = updateEvent.element;
                 switch (updateEvent.element)
                 {
-                    case Element.FIRE: _shieldTrans.GetComponent<SpriteRenderer>().color = new Color(253f / 255, 146f / 255, 93f / 255, 1f); break;
-                    case Element.WATER: _shieldTrans.GetComponent<SpriteRenderer>().color = new Color(33f / 255, 225f / 255, 225f / 255, 1f); break;
-                    case Element.PLANT: _shieldTrans.GetComponent<SpriteRenderer>().color = new Color(35f / 255, 193f / 255, 38f / 255, 1f); break;
-                    case Element.ROCK: _shieldTrans.GetComponent<SpriteRenderer>().color = new Color(227f / 255, 179f / 255, 66f / 255, 1f); break;
+                    case Element.FIRE: _shieldTrans.GetComponent<SpriteRenderer>().color = new Color(236f / 255, 68f / 255, 51f / 255, 1f); break;
+                    case Element.WATER: _shieldTrans.GetComponent<SpriteRenderer>().color = new Color(1f / 255, 156f / 255, 255f / 255, 1f); break;
+                    case Element.PLANT: _shieldTrans.GetComponent<SpriteRenderer>().color = new Color(58f / 255, 194f / 255, 47f / 255, 1f); break;
+                    case Element.ROCK: _shieldTrans.GetComponent<SpriteRenderer>().color = new Color(223f / 255, 166f / 255, 38f / 255, 1f); break;
                 }
 
             }).UnRegisterWhenGameObjectDestroyed(gameObject);
@@ -112,12 +109,14 @@ namespace TruthOrLie_Demo
                 _swordElement = updateEvent.element;
                 switch (updateEvent.element)
                 {
-                    case Element.FIRE: _swordTrans.GetComponent<SpriteRenderer>().color = new Color(253f / 255, 146f / 255, 93f / 255, 1); break;
-                    case Element.WATER: _swordTrans.GetComponent<SpriteRenderer>().color = new Color(33f / 255, 225f / 255, 225f / 255, 1); break;
-                    case Element.PLANT: _swordTrans.GetComponent<SpriteRenderer>().color = new Color(35f / 255, 193f / 255, 38f / 255, 1); break;
-                    case Element.ROCK: _swordTrans.GetComponent<SpriteRenderer>().color = new Color(227f / 255, 179f / 255, 66f / 255, 1); break;
+                    case Element.FIRE: _swordTrans.GetComponent<SpriteRenderer>().color = new Color(236f / 255, 68f / 255, 51f / 255, 1f); break;
+                    case Element.WATER: _swordTrans.GetComponent<SpriteRenderer>().color = new Color(1f / 255, 156f / 255, 255f / 255, 1f); break;
+                    case Element.PLANT: _swordTrans.GetComponent<SpriteRenderer>().color = new Color(58f / 255, 194f / 255, 47f / 255, 1f); break;
+                    case Element.ROCK: _swordTrans.GetComponent<SpriteRenderer>().color = new Color(223f / 255, 166f / 255, 38f / 255, 1f); break;
                 }
             }).UnRegisterWhenGameObjectDestroyed(gameObject);
+
+            PlayerInit();
 
         }
 

@@ -34,14 +34,18 @@ namespace TruthOrLie_Demo
 
             if (_node.IsVisited)
             {
+                Debug.Log("visited");
                 MapInfoPanel.MapInfoPanelUpdateEvent updateEvent1 = new MapInfoPanel.MapInfoPanelUpdateEvent();
                 updateEvent1.Env = _node.Env;
                 updateEvent1.EnemyCountText = $"x {_node.EnemyCount}";
                 updateEvent1.HPChangeText = "+0";
+                updateEvent1.TipsList = _node.TipsList;
+                _node.transform.Find("Environment").gameObject.SetActive(true);
                 this.SendEvent(updateEvent1);
                 return;
             }
 
+            Debug.Log("not visited");
             _node.IsVisited = true;
             float preHp = _player.HP;
 
@@ -65,7 +69,7 @@ namespace TruthOrLie_Demo
             }
             else if (_player.HP < 0)
             {
-                //
+                this.GetSystem<UISystem>().OpenPopup("Game Over");
             }
 
             MapInfoPanel.MapInfoPanelUpdateEvent updateEvent2 = new MapInfoPanel.MapInfoPanelUpdateEvent();
@@ -73,6 +77,8 @@ namespace TruthOrLie_Demo
             updateEvent2.EnemyElement = _node.EnemyElement;
             updateEvent2.EnemyCountText = $"x {_node.EnemyCount}";
             updateEvent2.HPChangeText = (_player.HP - preHp) < 0 ? $"{_player.HP - preHp}" : $"+{_player.HP - preHp}";
+            updateEvent2.TipsList = _node.TipsList;
+            _node.transform.Find("Environment").gameObject.SetActive(true);
             this.SendEvent(updateEvent2);
 
             InfoPanel.UpdateHPEvent updateEvent = new InfoPanel.UpdateHPEvent();

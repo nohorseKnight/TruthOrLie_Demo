@@ -11,6 +11,7 @@ namespace TruthOrLie_Demo
             transform.Find("ResetButton").GetComponent<Button>().onClick.AddListener(() =>
             {
                 this.SendCommand<InitGameCommand>();
+                this.GetSystem<UISystem>().CloseUI("PopupPanel");
             });
 
             transform.Find("ExitButton").GetComponent<Button>().onClick.AddListener(() =>

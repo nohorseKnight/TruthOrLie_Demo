@@ -12,7 +12,7 @@ namespace TruthOrLie_Demo
         }
         protected override void OnExecute()
         {
-            Player.ChangeSwordElemntEvent updateEvent = new Player.ChangeSwordElemntEvent();
+            Player.ChangeShieldElemntEvent updateEvent = new Player.ChangeShieldElemntEvent();
             updateEvent.element = _element;
             this.SendEvent(updateEvent);
         }

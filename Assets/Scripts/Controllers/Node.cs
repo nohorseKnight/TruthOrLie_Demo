@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using QFramework;
@@ -14,6 +15,16 @@ namespace TruthOrLie_Demo
         HP_INCREASE,
         TRAP,
         DESTINATION,
+    }
+    public enum TipsInfo
+    {
+        NONE,
+        FIRE, WATER, PLANT, ROCK,
+        HP_INCREASE, TRAP, DESTINATION,
+        enemy,
+        ELEMENT_FIRE, ELEMENT_WATER, ELEMENT_PLANT, ELEMENT_ROCK,
+        ZERO, ONE, TWO,
+        UP, DOWN, LEFT, RIGHT,
     }
     public class Node : BaseController
     {
@@ -41,6 +52,7 @@ namespace TruthOrLie_Demo
             get { return _isVisited; }
             set { _isVisited = value; }
         }
+        public List<string[]> TipsList;
 
         public string Info()
         {

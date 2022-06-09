@@ -9,6 +9,7 @@ namespace TruthOrLie_Demo
         {
             GameObject.Find("Player").GetComponent<Player>().PlayerInit();
             this.GetModel<GameRuntimeModel>().InitMap();
+            this.SendEvent<MapInfoPanel.MapInfoPanelInitEvent>();
         }
     }
 }

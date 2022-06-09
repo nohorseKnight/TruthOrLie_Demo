@@ -24,13 +24,12 @@ namespace TruthOrLie_Demo
             return (GameObject)go;
         }
 
-        public GameObject OpenInfoPoup(string title, string content)
+        public GameObject OpenPopup(string ContentText)
         {
-            if (openedWindow.ContainsKey("InfoPopupView")) return null;
-            var go = Object.Instantiate(Resources.Load<GameObject>("UIPrefabs/InfoPopupView"), canvasTrans.Find("TopLayout"));
-            go.transform.Find("BG").Find("Title").GetComponent<UITextMeshPro>().text = title;
-            go.transform.Find("BG").Find("Content").GetComponent<UITextMeshPro>().text = content;
-            openedWindow["InfoPopupView"] = go;
+            if (openedWindow.ContainsKey("PopupPanel")) return null;
+            var go = Object.Instantiate(Resources.Load<GameObject>("UIPrefabs/PopupPanel"), canvasTrans.Find("TopLayout"));
+            go.transform.Find("ContentText").GetComponent<UITextMeshPro>().text = ContentText;
+            openedWindow["PopupPanel"] = go;
 
             return (GameObject)go;
         }
