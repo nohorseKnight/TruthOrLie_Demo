@@ -9,6 +9,7 @@ namespace TruthOrLie_Demo
         public GameObject[,] Map;
         protected override void OnInit()
         {
+            Screen.SetResolution(850, 560, false);
             Map = new GameObject[5, 5];
             InitMap();
         }
@@ -42,6 +43,14 @@ namespace TruthOrLie_Demo
             Map[0, 0].GetComponent<Node>().EnemyCount = 0;
             Map[0, 0].GetComponent<Node>().EnemyElement = Element.NONE;
 
+            int desX = Random.Range(0, 5);
+            int desY = Random.Range(3, 5);
+            Debug.Log($"desX = {desX}, desY = {desY}");
+            Map[desX, desY].GetComponent<Node>().Env = Environment.DESTINATION;
+            Map[desX, desY].transform.Find("Environment").GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>($"Images/DESTINATION");
+            Map[desX, desY].GetComponent<Node>().EnemyCount = 0;
+            Map[desX, desY].GetComponent<Node>().EnemyElement = Element.NONE;
+
             for (int x = 0; x < Map.GetLength(0); x++)
             {
                 for (int y = 0; y < Map.GetLength(1); y++)
@@ -72,16 +81,44 @@ namespace TruthOrLie_Demo
                         list.Add(new string[] { "DOWN", "enemy", $"ELEMENT_{Map[x, y - 1].GetComponent<Node>().EnemyElement.ToString()}" });
                     }
 
-                    int index = Random.Range(0, list.Count);
-                    Map[x, y].GetComponent<Node>().TipsList = new List<string[]>();
-                    Map[x, y].GetComponent<Node>().TipsList.Add(list[index]);
-                    list.RemoveAt(index);
-                    index = Random.Range(0, list.Count);
-                    Map[x, y].GetComponent<Node>().TipsList.Add(list[index]);
-                    list.RemoveAt(index);
-                    index = Random.Range(0, list.Count);
-                    Map[x, y].GetComponent<Node>().TipsList.Add(list[index]);
+                    SeletThreeTipsToNode(x, y, list);
                 }
+            }
+        }
+
+        void SeletThreeTipsToNode(int x, int y, List<string[]> list)
+        {
+            int index = Random.Range(0, list.Count);
+            Map[x, y].GetComponent<Node>().TipsList = new List<string[]>();
+            Map[x, y].GetComponent<Node>().TipsList.Add(list[index]);
+            list.RemoveAt(index);
+            index = Random.Range(0, list.Count);
+            Map[x, y].GetComponent<Node>().TipsList.Add(list[index]);
+            list.RemoveAt(index);
+            index = Random.Range(0, list.Count);
+            Map[x, y].GetComponent<Node>().TipsList.Add(list[index]);
+
+            index = Random.Range(0, 3);
+            if (Map[x, y].GetComponent<Node>().TipsList[index][2] == "EMPTY")
+            {
+                if (Map[x, y].GetComponent<Node>().TipsList[index][1] == "FIRE") Map[x, y].GetComponent<Node>().TipsList[index][1] = "WATER";
+                if (Map[x, y].GetComponent<Node>().TipsList[index][1] == "WATER") Map[x, y].GetComponent<Node>().TipsList[index][1] = "PLANT";
+                if (Map[x, y].GetComponent<Node>().TipsList[index][1] == "PLANT") Map[x, y].GetComponent<Node>().TipsList[index][1] = "ROCK";
+                if (Map[x, y].GetComponent<Node>().TipsList[index][1] == "ROCK") Map[x, y].GetComponent<Node>().TipsList[index][1] = "HP_INCREASE";
+                if (Map[x, y].GetComponent<Node>().TipsList[index][1] == "HP_INCREASE") Map[x, y].GetComponent<Node>().TipsList[index][1] = "TRAP";
+                if (Map[x, y].GetComponent<Node>().TipsList[index][1] == "TRAP") Map[x, y].GetComponent<Node>().TipsList[index][1] = "DESTINATION";
+                if (Map[x, y].GetComponent<Node>().TipsList[index][1] == "DESTINATION") Map[x, y].GetComponent<Node>().TipsList[index][1] = "FIRE";
+            }
+            else if (Map[x, y].GetComponent<Node>().TipsList[index][1] == "enemy")
+            {
+                if (Map[x, y].GetComponent<Node>().TipsList[index][2] == "0") Map[x, y].GetComponent<Node>().TipsList[index][2] = "1";
+                if (Map[x, y].GetComponent<Node>().TipsList[index][2] == "1") Map[x, y].GetComponent<Node>().TipsList[index][2] = "2";
+                if (Map[x, y].GetComponent<Node>().TipsList[index][2] == "2") Map[x, y].GetComponent<Node>().TipsList[index][2] = "0";
+                if (Map[x, y].GetComponent<Node>().TipsList[index][2] == "ELEMENT_FIRE") Map[x, y].GetComponent<Node>().TipsList[index][2] = "ELEMENT_WATER";
+                if (Map[x, y].GetComponent<Node>().TipsList[index][2] == "ELEMENT_WATER") Map[x, y].GetComponent<Node>().TipsList[index][2] = "ELEMENT_PLANT";
+                if (Map[x, y].GetComponent<Node>().TipsList[index][2] == "ELEMENT_PLANT") Map[x, y].GetComponent<Node>().TipsList[index][2] = "ELEMENT_ROCK";
+                if (Map[x, y].GetComponent<Node>().TipsList[index][2] == "ELEMENT_ROCK") Map[x, y].GetComponent<Node>().TipsList[index][2] = "ELEMENT_NONE";
+                if (Map[x, y].GetComponent<Node>().TipsList[index][2] == "ELEMENT_NONE") Map[x, y].GetComponent<Node>().TipsList[index][2] = "ELEMENT_FIRE";
             }
         }
     }

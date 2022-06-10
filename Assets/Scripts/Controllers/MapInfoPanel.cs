@@ -15,6 +15,7 @@ namespace TruthOrLie_Demo
             public string EnemyCountText;
             public string HPChangeText;
             public List<string[]> TipsList;
+            public int StepNumber;
         }
         public struct MapInfoPanelInitEvent
         {
@@ -47,6 +48,7 @@ namespace TruthOrLie_Demo
                         .GetComponent<Image>().sprite = Resources.Load<Sprite>($"Images/{updateEvent.TipsList[i][j]}");
                     }
                 }
+                transform.Find("StepNumberText").GetComponent<UITextMeshPro>().text = updateEvent.StepNumber.ToString();
             }).UnRegisterWhenGameObjectDestroyed(gameObject);
 
             this.RegisterEvent<MapInfoPanelInitEvent>(updateEvent =>
@@ -64,6 +66,7 @@ namespace TruthOrLie_Demo
             transform.Find("EnemyCountText").GetComponent<UITextMeshPro>().text = "0";
             transform.Find("HealthChangeText").GetComponent<UITextMeshPro>().text = "+0";
             transform.Find("EnemyImage").GetComponent<Image>().color = Color.white;
+            transform.Find("StepNumberText").GetComponent<UITextMeshPro>().text = "0";
             gameRuntimeModel.Map[0, 0].transform.Find("Environment").gameObject.SetActive(true);
             for (int i = 0; i < 3; i++)
             {

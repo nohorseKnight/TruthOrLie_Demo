@@ -32,6 +32,8 @@ namespace TruthOrLie_Demo
         {
             Debug.Log(_node.Info());
 
+            _player.StepNumber++;
+
             if (_node.IsVisited)
             {
                 Debug.Log("visited");
@@ -40,6 +42,7 @@ namespace TruthOrLie_Demo
                 updateEvent1.EnemyCountText = $"x {_node.EnemyCount}";
                 updateEvent1.HPChangeText = "+0";
                 updateEvent1.TipsList = _node.TipsList;
+                updateEvent1.StepNumber = _player.StepNumber;
                 _node.transform.Find("Environment").gameObject.SetActive(true);
                 this.SendEvent(updateEvent1);
                 return;
@@ -57,6 +60,10 @@ namespace TruthOrLie_Demo
             {
                 _player.HP -= 30f;
             }
+            else if (_node.Env == Environment.DESTINATION)
+            {
+                this.GetSystem<UISystem>().OpenPopup("Success!!");
+            }
             else
             {
                 _player.HP += ATKEffectTable[(int)_player.SwordElement, (int)_node.EnemyElement] * 20f * _node.EnemyCount;
@@ -67,7 +74,7 @@ namespace TruthOrLie_Demo
             {
                 _player.HP = 100f;
             }
-            else if (_player.HP < 0)
+            else if (_player.HP < 0.1)
             {
                 this.GetSystem<UISystem>().OpenPopup("Game Over");
             }
@@ -78,6 +85,7 @@ namespace TruthOrLie_Demo
             updateEvent2.EnemyCountText = $"x {_node.EnemyCount}";
             updateEvent2.HPChangeText = (_player.HP - preHp) < 0 ? $"{_player.HP - preHp}" : $"+{_player.HP - preHp}";
             updateEvent2.TipsList = _node.TipsList;
+            updateEvent2.StepNumber = _player.StepNumber;
             _node.transform.Find("Environment").gameObject.SetActive(true);
             this.SendEvent(updateEvent2);
 

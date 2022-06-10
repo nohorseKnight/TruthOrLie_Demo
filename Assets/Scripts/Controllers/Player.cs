@@ -48,6 +48,7 @@ namespace TruthOrLie_Demo
             get { return _hp; }
             set { _hp = value; }
         }
+        public int StepNumber;
         void Start()
         {
             GameRuntimeModel gameRuntimeModel = this.GetModel<GameRuntimeModel>();
@@ -130,6 +131,8 @@ namespace TruthOrLie_Demo
 
             _mapX = 0;
             _mapY = 0;
+
+            StepNumber = -1;
 
             transform.position = Vector3.zero;
 

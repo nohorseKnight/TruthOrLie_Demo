@@ -44,13 +44,14 @@
      <Compile Include="Assets\Scripts\Models\GameRuntimeModel.cs" />
      <Compile Include="Assets\Scripts\Systems\UISystem.cs" />
      <Compile Include="Assets\Scripts\Commands\ChangePlayerATKElementCommand.cs" />
+     <Compile Include="Assets\Scripts\Controllers\MapInfoPanel.cs" />
      <Compile Include="Assets\Scripts\Controllers\InfoPanel.cs" />
      <Compile Include="Assets\Scripts\QFramework.cs" />
      <Compile Include="Assets\Scripts\Commands\ChangePlayerDEFElementCommand.cs" />
-     <Compile Include="Assets\Scripts\Controllers\MapInfoPanel.cs" />
-     <Compile Include="Assets\Scripts\Controllers\MenuPanel.cs" />
      <Compile Include="Assets\Scripts\Commands\InitGameCommand.cs" />
+     <Compile Include="Assets\Scripts\Controllers\MenuPanel.cs" />
      <Compile Include="Assets\Scripts\Controllers\PopupPanel.cs" />
+     <Compile Include="Assets\Scripts\Controllers\HelpInfoPanel.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

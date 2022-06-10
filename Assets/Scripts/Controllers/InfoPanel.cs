@@ -25,6 +25,11 @@ namespace TruthOrLie_Demo
             _HpImage = transform.Find("HPImage").GetComponent<Image>();
             _HpTextMesh = transform.Find("HPNumber").GetComponent<UITextMeshPro>();
 
+            transform.Find("HelpButton").GetComponent<Button>().onClick.AddListener(() =>
+            {
+                this.GetSystem<UISystem>().OpenUI("HelpInfoPanel");
+            });
+
             this.RegisterEvent<UpdateHPEvent>(updateEvent =>
             {
                 updateEvent.HP = updateEvent.HP > 100f ? 100f : updateEvent.HP;
